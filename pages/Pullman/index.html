@@ -1,0 +1,75 @@
+<div class="modulo-caja">
+    <header>
+        <nav>
+            <img src="assets/img/Pullman/LOGOTIPO_PB_NARANJO_NORMA@2x.png" alt="Logo Pullman" class="logo-pullman">
+            <h1>MODULO DE CAJA BAÑOS</h1>
+            <img src="assets/img/wit.png" alt="Logo Wit" class="logo-wit" />
+        </nav>
+    </header>
+
+    <main>
+        <div id="codigo-container">
+            <div class="codigo-input-container">
+                <img class="input-icon" src="assets/img/Pullman/LUPA.svg" alt="Search" style="height: 16px" />
+                <div class="input-container">
+                    <input type="text" id="ticketInput" class="codigo-input" placeholder="Código" autocomplete="off"
+                        autocorrect="off" />
+                </div>
+            </div>
+            <button id="searchTicketBtn" class="sm-button search-btn">
+                <img src="assets/img/Pullman/LUPA boton.svg" alt="Search" style="height: 20px" fill="white" />
+            </button>
+            <button id="resumen-button" class="sm-button">VERIFICAR CÓDIGO</button>
+
+            <button class="sm-button" onclick="window.location.href='home.html'">
+                VOLVER
+            </button>
+        </div>
+
+        <h2 class="text-center">Elija la opción segun servicio, para imprimir Ticket.</h2>
+        <div id="btns-container">
+            <button class="btn-genera-baño lg-button-generarQR" data-tipo="BAÑO">
+                BAÑO<br>
+                <span class="precio">$500</span>
+            </button>
+            <button class="btn-genera-ducha lg-button-generarQR" data-tipo="DUCHA">
+                DUCHA<br>
+                <span class="precio">$4.000</span>
+            </button>
+        </div>
+
+        <div id="ticket-container" class="container">
+            <div class="row">
+                <h3 class="text-center pb-2">ÚLTIMO TICKET y BOLETA IMPRESO</h3>
+
+                <div id="contenedorQR" class="img-qr col"></div>
+
+                <div class="ticket-text col">
+                    <p>CÓDIGO TICKET</p>
+                    <p>TIPO</p>
+                    <p>FECHA</p>
+                    <p>HORA</p>
+                </div>
+
+                <div class="ticket-text col">
+                    <p id="codigo"></p>
+                    <p id="tipo"></p>
+                    <p id="fecha"></p>
+                    <p id="hora"></p>
+                </div>
+
+                <div class="ticket-voucher col">
+                    <p class="fw-bold">N° Boleta: VKKK-0256</p>
+                    <p>Valor Neto: $420</p>
+                    <p>IVA 19%: $80</p>
+                    <span>----------------------------------</span>
+                    <p>TOTAL: $500</p>
+                </div>            
+            </div>
+        </div>
+    </main>
+
+    <button id="printPrueba">prueba</button>
+
+</div>
+<script src="assets/js/index.js"></script>
